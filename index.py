@@ -14,9 +14,9 @@ bot = Bot(TOKEN)
 
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"NAMASTE {update.message.from_user.first_name}, Welcome to @MoviesDownloader_Robot.\nWe're excited to bring you the latest and greatest movies from around the world,available for download right here on Telegram.\n\nJoin the\n@MOVIESDOWNLOADER_CHATBOT Group today and start enjoying the latest and greatest movies from around the world. We can't wait to see you there!\n"
-                              f"To get started, simply type in the name of the movie you're looking for and we'll search our database to find it for you.")
-    update.message.reply_text("👾 ENTER YOUR MOVIE NAME 👾")
+    update.message.reply_text(f"NAMASTE 🙏{update.message.from_user.first_name},\n\nWelcome to @MoviesDownloader_Robot.\nWe're excited to bring you the latest and greatest movies from around the world,available for download right here on Telegram.\n\nJoin @MOVIESDOWNLOADER_CHATBOT Group today and start enjoying the latest and greatest movies from around the world. We can't wait to see you there!\n"
+                              f"🏷️NOTE:- To Get Started, Simply Type in The Name of The Movie You're Looking For And We'll Search Our Database to Find it For You.")
+    update.message.reply_text("👨‍💻🔎ENTER YOUR MOVIE NAME🔍👩‍💻")
 
 
 def find_movie(update, context):
@@ -31,7 +31,7 @@ def find_movie(update, context):
         reply_markup = InlineKeyboardMarkup(keyboards)
         search_results.edit_text('Search Results...', reply_markup=reply_markup)
     else:
-        search_results.edit_text('SORRY🙇.... NO RESULT FOUND!\nCheck Your Speeling or Request to \n@Devsharmaaaaaa.')
+        search_results.edit_text('SORRY🙇.... NO RESULT FOUND🥹!\nCheck Your Speeling or Request to \n@Devsharmaaaaaa.')
 
 
 def movie_result(update, context) -> None:
