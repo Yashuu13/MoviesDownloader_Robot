@@ -14,9 +14,9 @@ bot = Bot(TOKEN)
 
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome to SB Movies.\n"
-                              f"🔥 Download Your Favourite Movies For 💯 Free And 🍿 Enjoy it.")
-    update.message.reply_text("👇 Enter Movie Name 👇")
+    update.message.reply_text(f"NAMASTE {update.message.from_user.first_name}, Welcome to @MoviesDownloader_Robot.\nWe're excited to bring you the latest and greatest movies from around the world,available for download right here on Telegram.\nJoin the @MOVIESDOWNLOADER_CHATBOT Group today and start enjoying the latest and greatest movies from around the world. We can't wait to see you there!\n"
+                              f"To get started, simply type in the name of the movie you're looking for and we'll search our database to find it for you.")
+    update.message.reply_text("👇 ENTER MOVIE NAME 👇")
 
 
 def find_movie(update, context):
